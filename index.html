@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<script>
+    function add(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a + b;
+        document.getElementById("answer").value = c;
+    }
+    function sub(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a - b;
+        document.getElementById("answer").value = c;
+    }
+    function mul(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a * b;
+        document.getElementById("answer").value = c;
+    }
+    function div(){
+        var a,b,c;
+        a=Number(document.getElementById("first").value);
+        b=Number(document.getElementById("second").value);
+        c= a / b;
+        document.getElementById("answer").value = c;
+    }
+</script>
+</head>
+<body>
+    <h1>Arithmetic Calculations in JavaScript</h1><br>
+Number1 : <input id="first"><br>
+Number2 : <input id="second"><br>
+<button onclick="add()">Add</button>
+<button onclick="sub()">Sub</button>
+<button onclick="mul()">Mul</button>
+<button onclick="div()">Div</button><br>
+<input id="answer">
+</body>
+</html>
